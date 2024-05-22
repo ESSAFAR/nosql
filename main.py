@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from connections import mongo_client, neo4j_driver
+from crud import add_book, update_book, get_book, delete_book
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+if __name__ == "__main__":
+    # Adding a book
+    add_book("1", "1984", "George Orwell", 1949)
 
+    # Updating a book
+    update_book("1", author="Orwell, George")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    # Retrieving a book
+    book = get_book("1")
+    print(book)
 
+    # Deleting a book
+    delete_book("1")
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # Closing connections
+    mongo_client.close()
+    neo4j_driver.close()
