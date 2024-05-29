@@ -1,2 +1,4 @@
 pymongo
 neo4j
+Pillow
+requests
