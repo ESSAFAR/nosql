@@ -1,4 +1,4 @@
-#This file create connections with data bases
+# This file creates connections with databases
 
 # Import necessary libraries
 from pymongo import MongoClient
@@ -21,6 +21,3 @@ mongo_collection = mongo_db[MONGO_COLLECTION]
 
 # Neo4j driver setup
 # neo4j_driver = GraphDatabase.driver(NEO4J_URI, auth=(NEO4J_USER, NEO4J_PASSWORD))
-
-
-
