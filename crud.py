@@ -127,3 +127,5 @@ def delete_loan(loan_id):
     loans_collection.delete_one({"_id": loan_id})
 
 
+
+

@@ -220,7 +220,6 @@ if __name__ == "__main__":
     app = BookManagerApp()
     app.mainloop()
 
-
 """ import tkinter as tk
 from tkinter import ttk, messagebox
 from crud import add_book, update_book, get_book, delete_book
@@ -366,5 +365,4 @@ if __name__ == "__main__":
     app = BookManagerApp()
     app.mainloop()
  """
- 
 
