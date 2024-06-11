@@ -1,7 +1,6 @@
 import random
 import tkinter as tk
 from tkinter import ttk, messagebox
-from PIL import Image, ImageTk, ImageEnhance
 import requests
 from io import BytesIO
 from crud import add_book, update_book, get_book, delete_book, members_collection, loans_collection, \
@@ -12,7 +11,6 @@ from tkinter import ttk, messagebox
 
 import tkinter as tk
 from tkinter import ttk, messagebox
-from PIL import Image, ImageTk, ImageEnhance
 import requests
 from io import BytesIO
 from crud import add_book, update_book, get_book, delete_book, members_collection, loans_collection, \
