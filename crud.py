@@ -118,8 +118,8 @@ def add_loan(loan_id, book_id, member_id, loan_date, return_date=None):
         "_id": loan_id,
         "book_id": book_id,
         "member_id": member_id,
-        "loan_date": loan_date,
-        "return_date": return_date
+        "return_date": return_date,
+        "loan_date": loan_date
     }
     loans_collection.insert_one(loan_doc)
 
