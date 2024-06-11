@@ -28,7 +28,7 @@ books_mongo = get_all_books_mongo()
 print("Books from Mongo:", books_mongo)
 
 # Delete the book
-delete_book(book_id=1)
+# delete_book(book_id=1)
 
 # Add a member
 add_member(member_id=11, name="Essafar", email="anwar@mail.com", membership_date=datetime.now())
@@ -38,11 +38,12 @@ member = get_member(member_id=11)
 print("Retrieved Member:", member)
 
 # Delete the member
-delete_member(member_id=11)
+# delete_member(member_id=11)
 
 # Add a loan
 add_loan(loan_id=12, book_id=13, member_id=11, loan_date=datetime.now())
 
+# # Update the loan
 # # Update the loan
 update_loan(loan_id=12, return_date=datetime.now())
 
@@ -52,7 +53,7 @@ print("Retrieved Loan:", loan)
 
 
 #Delete the loan
-delete_loan(loan_id=12)
+# delete_loan(loan_id=12)
 
 
 

@@ -184,3 +184,8 @@ def get_all_books_neo4j2():
                 "year": record["year"]
             })
         return books
+
+
+def get_loan_by_book(book_id):
+    loans = loans_collection.find({"book_id": book_id})
+    return list(loans)
